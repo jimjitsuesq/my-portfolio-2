@@ -1,0 +1,80 @@
+{ "logos" : [
+  {
+    "id": 0,
+    "logo_name": "axios",
+    "logo_alt": "axios logo",
+    "logo_height": "25px"
+  },
+  {
+    "id": 1,
+    "logo_name": "css_html",
+    "logo_alt": "css html logo",
+    "logo_height": "80px"
+  },
+  {
+    "id": 2,
+    "logo_name": "expressjs",
+    "logo_alt": "express logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 3,
+    "logo_name": "figma",
+    "logo_alt": "figma logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 4,
+    "logo_name": "google_cloud",
+    "logo_alt": "google cloud logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 5,
+    "logo_name": "javascript",
+    "logo_alt": "javascript logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 6,
+    "logo_name": "mysql",
+    "logo_alt": "mysql logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 7,
+    "logo_name": "netlify",
+    "logo_alt": "netlify logo",
+    "logo_height": "60px"
+  },
+  { 
+    "id": 8,
+    "logo_name": "nodejs",
+    "logo_alt": "nodejs logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 9,
+    "logo_name": "postman",
+    "logo_alt": "postman logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 10,
+    "logo_name": "pugjs",
+    "logo_alt": "pugjs logo",
+    "logo_height": ""
+  },
+  { 
+    "id": 11,
+    "logo_name": "reactjs",
+    "logo_alt": "reactjs logo",
+    "logo_height": "85px"
+  },
+  { 
+    "id": 12,
+    "logo_name": "sqlite",
+    "logo_alt": "sqlite logo",
+    "logo_height": ""
+  }
+]}
