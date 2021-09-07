@@ -25,7 +25,6 @@ const Project = (props) => {
     }
   }
   generateScreenshotsArray();
-
   function generateDescription () {
     const description = projects[id].description;
     const sanitizer = DOMPurify.sanitize;
@@ -33,7 +32,6 @@ const Project = (props) => {
       <div dangerouslySetInnerHTML={{__html: sanitizer(`${description}`)}} /> 
     )
   }
-  
   return (
   <>
     <header>
@@ -54,6 +52,8 @@ const Project = (props) => {
                         src={require(`../../images/projects/logos/${logos[projects[id].built_technologies[i][1]].logo_name}.svg`).default} 
                         alt={`${logos[projects[id].built_technologies[i][1]].logo_alt}`} 
                         height={`${logos[projects[id].built_technologies[i][1]].logo_height}`}
+                        style={{paddingTop: `${logos[projects[id].built_technologies[i][1]].logo_padding_top}`, paddingRight: `${logos[projects[id].built_technologies[i][1]].logo_padding_right}`, paddingBottom: `${logos[projects[id].built_technologies[i][1]].logo_padding_bottom}`, paddingLeft: `${logos[projects[id].built_technologies[i][1]].logo_padding_left}`}}
+                        
                   />
                   )
               })}
@@ -69,6 +69,7 @@ const Project = (props) => {
                         src={require(`../../images/projects/logos/${logos[projects[id].deployed_technologies[i][1]].logo_name}.svg`).default} 
                         alt={`${logos[projects[id].deployed_technologies[i][1]].logo_alt}`} 
                         height={`${logos[projects[id].deployed_technologies[i][1]].logo_height}`}
+                        style={{paddingTop: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_top}`, paddingRight: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_right}`, paddingBottom: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_bottom}`, paddingLeft: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_left}`}}
                   />
                   )
               })}
@@ -78,17 +79,33 @@ const Project = (props) => {
     </main>
     <div className="right-sidebar">
       <div className="right-sidebar-links">
+        {`${projects[id].github_server_link}` === '0' ? 
+          <a href={`${projects[id].github_client_link}`} 
+              target="_blank" 
+              rel="noreferrer">
+              Github
+          </a>
+          :
+          <a  
+              href={`${projects[id].github_client_link}`} 
+              target="_blank" 
+              rel="noreferrer">
+              Github-Client
+          </a>
+        }
+        {`${projects[id].github_server_link}` === '0' ? '' :
+          <a  style={{marginBottom: 10}}
+            href={`${projects[id].github_server_link}`} 
+            target="_blank" 
+            rel="noreferrer">
+            Github-Server
+          </a>
+        }
         <a  
             href={`${projects[id].live_demo}`} 
             target="_blank"   
             rel="noreferrer">
             Live Demo
-        </a>
-        <a  
-            href={`${projects[id].github_link}`} 
-            target="_blank" 
-            rel="noreferrer">
-            Github Repo
         </a>
       </div>
       <div className="right-sidebar-screenshots">

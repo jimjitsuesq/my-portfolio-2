@@ -9,13 +9,17 @@
     "id": 1,
     "logo_name": "css_html",
     "logo_alt": "css html logo",
-    "logo_height": "80px"
+    "logo_height": "70px"
   },
   {
     "id": 2,
     "logo_name": "expressjs",
     "logo_alt": "express logo",
-    "logo_height": ""
+    "logo_height": "25px",
+    "logo_padding_top": "10px",
+    "logo_padding_right": "10px",
+    "logo_padding_bottom": "0px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 3,
@@ -27,7 +31,11 @@
     "id": 4,
     "logo_name": "google_cloud",
     "logo_alt": "google cloud logo",
-    "logo_height": ""
+    "logo_height": "40px",
+    "logo_padding_top": "27px",
+    "logo_padding_right": "20px",
+    "logo_padding_bottom": "27px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 5,
@@ -39,19 +47,27 @@
     "id": 6,
     "logo_name": "mysql",
     "logo_alt": "mysql logo",
-    "logo_height": ""
+    "logo_height": "80px",
+    "logo_padding_top": "0px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "20px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 7,
     "logo_name": "netlify",
     "logo_alt": "netlify logo",
-    "logo_height": "60px"
+    "logo_height": "40px"
   },
   { 
     "id": 8,
     "logo_name": "nodejs",
     "logo_alt": "nodejs logo",
-    "logo_height": ""
+    "logo_height": "50px",
+    "logo_padding_top": "10px",
+    "logo_padding_right": "15px",
+    "logo_padding_bottom": "0px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 9,
@@ -69,7 +85,7 @@
     "id": 11,
     "logo_name": "reactjs",
     "logo_alt": "reactjs logo",
-    "logo_height": "85px"
+    "logo_height": "80px"
   },
   { 
     "id": 12,

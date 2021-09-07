@@ -73,6 +73,12 @@ main {
   margin-bottom: 20px;
 }
 
+.project-text-container h3 {
+  text-decoration: underline;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .project-technology-container {
   background: rgba(24, 55, 87, 0.79);
   display: flex;
@@ -89,7 +95,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:10px;
+  padding:5px;
   padding-bottom: 20px;
   flex: 1;
 }
@@ -108,11 +114,6 @@ main {
   display:flex;
 }
 
-.project-technology-box-logo-container img {
-  padding:10px;
-}
-
-
 /* Right sidebar */
 
 .right-sidebar {
@@ -126,6 +127,7 @@ main {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .right-sidebar-links a {
@@ -134,10 +136,15 @@ main {
   border: 1px solid #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-left: 10px;
-  padding-right: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
+  min-width: 140px;
+  height: 33px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .right-sidebar-screenshots {

@@ -2,23 +2,24 @@
     {
         "id": 0,
         "project_name": "Full-Stack Academic Curriculum Manager",
-        "description": "An educational curriculum manager comprised of a NodJS/Express-powered API and a React frontend.",
-        "technologies": ["NodeJS", "Express", "React", "JavaScript", "HTML", "CSS"],
+        "project_name_short": "acm",
+        "description": "<p>A full-stack application that manages the curriculum offerings of an academic institution and allows registered teachers to view, create, edit and delete courses they offer.<\/p>\r\n        <ul>\r\n          <li>The client and server were the ninth and tenth projects, respectively, in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n          <li>I received grades of &quot;Exceeds Expectations&quot; (the highest grade available) for both projects.<\/li>\r\n        <\/ul>\r\n        <h3>Server<\/h3>\r\n        <p>The backend REST API is written in NodeJS and uses the ExpressJS framework to handle user authorization, routing and MySQL queries written using Sequelize ORM.  The server is deployed using the Google App Engine on the Google Cloud Platform.<\/p>\r\n        <h3>Database<\/h3>\r\n        <p>The MySQL database is also hosted on Google Cloud using the Google Compute Engine.  Originally, the project utilized a simple SQLite database, but after I completed the Treehouse bootcamp I wanted to expand the project and my knowledge of hosted MySQL solutions, so I upgraded it.<\/p>\r\n        <h3>Client<\/h3>\r\n        <p>The frontend is written using ReactJS to display the site, interact with the server, handle data validation and make the site accessible. The site is deployed to Netlify and was originally written in React&#39;s older &quot;class&quot; syntax, but after completing the Treehouse bootcamp I completely rewrote it using React Hooks. This challenge was a way to get more practice using these newer functions, to better understand &quot;state&quot; and to streamline the app for deployment.<\/p>",
+        "built_technologies": [["nodejs", 8], ["expressjs", 2], ["reactjs", 11], ["mysql", 6]],
+        "deployed_technologies": [["google_cloud", 4], ["netlify", 7]],
         "live_demo": "https://portfolio-acm-client.netlify.app/",
         "github_client_link": "https://github.com/jimjitsuesq/portfolio-acm-client",
         "github_server_link": "https://github.com/jimjitsuesq/portfolio-acm-server",
-        "thumbnail_url": "./images/academic-curriculum-manager/ACM_square.jpg",
-        "image_urls": ["../images/academic-curriculum-manager/ACM_landscape_0.jpg",  "../images/academic-curriculum-manager/ACM_landscape_1.jpg",  "../images/academic-curriculum-manager/ACM_landscape_2.jpg"]
+        "screenshots": 4
     },
     {
         "id": 1,
         "project_name": "Flickr Search",
-        "project_name_short": "flickrSearch",
-        "project_module_name": "FlickrSearch",
+        "project_name_short": "flickr-search",
         "built_technologies": [["reactjs", 11], ["axios", 0], ["css_html", 1]],
         "deployed_technologies": [["netlify", 7]],
         "live_demo": "https://portfolio-flickr-search.netlify.app/",
-        "github_link": "https://github.com/jimjitsuesq/portfolio-flickr-search",
+        "github_client_link": "https://github.com/jimjitsuesq/portfolio-flickr-search",
+        "github_server_link": 0,
         "screenshots": 3,
         "description": ["<p>An app written in ReactJS that searches Flickr for photos using their API and displays them in a gallery.<\/p> \r\n            <ul>\r\n              <li>The seventh project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp program.<\/li>\r\n              <li>Received a grade of \"Exceeds Expectations\" (the highest grade available).<\/li>\r\n              <li>Used the Axios package to make asyncrounous fetch requests from Flickr.<\/li>\r\n              <li>Used React Router to track, manipulate and harness the browser history to allow users to browse backwards and forwards through their searches.<\/li>\r\n            <\/ul>\r\n            <p>The app was originally written in React's older \"class\" syntax, but after completing the Treehouse bootcamp I completely rewrote it using React Hooks. This challenge was a way to get more practice using these newer functions, to better understand \"state\" and to streamline the app for deployment.</p>"]
     },
