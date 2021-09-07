@@ -115,7 +115,6 @@ const Project = (props) => {
                   key={i}
                   src={photo.default} 
                   alt={`screenshot${i+1}`} 
-                  height="195px" 
                   width="300px"
                   onClick={handlePicClick}
             />

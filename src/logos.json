@@ -3,13 +3,21 @@
     "id": 0,
     "logo_name": "axios",
     "logo_alt": "axios logo",
-    "logo_height": "25px"
+    "logo_height": "25px",
+    "logo_padding_top": "0px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "0px",
+    "logo_padding_left": "0px"
   },
   {
     "id": 1,
     "logo_name": "css_html",
     "logo_alt": "css html logo",
-    "logo_height": "70px"
+    "logo_height": "70px",
+    "logo_padding_top": "10px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "10px",
+    "logo_padding_left": "20px"
   },
   {
     "id": 2,
@@ -17,7 +25,7 @@
     "logo_alt": "express logo",
     "logo_height": "25px",
     "logo_padding_top": "10px",
-    "logo_padding_right": "10px",
+    "logo_padding_right": "5px",
     "logo_padding_bottom": "0px",
     "logo_padding_left": "0px"
   },
@@ -41,7 +49,11 @@
     "id": 5,
     "logo_name": "javascript",
     "logo_alt": "javascript logo",
-    "logo_height": ""
+    "logo_height": "70px",
+    "logo_padding_top": "10px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "10px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 6,
@@ -57,7 +69,11 @@
     "id": 7,
     "logo_name": "netlify",
     "logo_alt": "netlify logo",
-    "logo_height": "40px"
+    "logo_height": "40px",
+    "logo_padding_top": "25px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "25px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 8,
@@ -79,18 +95,36 @@
     "id": 10,
     "logo_name": "pugjs",
     "logo_alt": "pugjs logo",
-    "logo_height": ""
+    "logo_height": "50px",
+    "logo_padding_top": "0px",
+    "logo_padding_right": "15px",
+    "logo_padding_bottom": "0px",
+    "logo_padding_left": "15px"
   },
   { 
     "id": 11,
     "logo_name": "reactjs",
     "logo_alt": "reactjs logo",
-    "logo_height": "80px"
+    "logo_height": "80px",
+    "logo_padding_top": "0px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "0px",
+    "logo_padding_left": "0px"
   },
   { 
     "id": 12,
     "logo_name": "sqlite",
     "logo_alt": "sqlite logo",
-    "logo_height": ""
+    "logo_height": "50px"
+  },
+  {
+    "id": 13,
+    "logo_name": "github",
+    "logo_alt": "github logo",
+    "logo_height": "45px",
+    "logo_padding_top": "20px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "20px",
+    "logo_padding_left": "0px"
   }
 ]}
