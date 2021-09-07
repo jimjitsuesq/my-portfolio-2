@@ -53,8 +53,8 @@
     "project_name_short": "interactive-form",
     "built_technologies": [["javascript", 5], ["css_html", 1]],
     "deployed_technologies": [["github", 13]],
-    "live_demo": "https://jimjitsuesq.github.io/interactive-form/",
-    "github_client_link": "https://github.com/jimjitsuesq/interactive-form",
+    "live_demo": "https://jimjitsuesq.github.io/portfolio-interactive-form/",
+    "github_client_link": "https://github.com/jimjitsuesq/portfolio-interactive-form",
     "github_server_link": 0,
     "screenshots": 2,
     "description": "<p>An HTML\/JavaScript site containing a sign-up form for a developer conference.<\/p>\r\n<ul>\r\n<li>This was the third project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n<li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n<li>The main focuses of this project were on building form elements, data validation and practicing regular expressions.<\/li>\r\n\r\n<\/ul>"
@@ -65,8 +65,8 @@
     "project_name_short": "employee-directory",
     "built_technologies": [["javascript", 5], ["css_html", 1]],
     "deployed_technologies": [["github", 13]],
-    "live_demo": "https://jimjitsuesq.github.io/public-api-employee-directory/",
-    "github_client_link": "https://github.com/jimjitsuesq/public-api-employee-directory",
+    "live_demo": "https://jimjitsuesq.github.io/portfolio-employee-directory/",
+    "github_client_link": "https://github.com/jimjitsuesq/portfolio-employee-directory",
     "github_server_link": 0,
     "screenshots": 3,
     "description": "<p>A JavaScript site that asynchronously fetches data from <a href=\"http:\/\/randomuser.me\">randomuser.me<\/a>, a public API, and displays it.<\/p>\r\n        <ul>\r\n        <li>This was the fifth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n        <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n        <li>The main focuses of this project were on fetching data from an API and writing asynchronous functions using async\/await.<\/li>\r\n        <li>Other emphasis of this project were on creating modals and implementing search functionality.<\/li>\r\n      <\/ul>"
@@ -77,20 +77,22 @@
     "project_name_short": "random-quote-generator",
     "built_technologies": [["javascript", 5], ["css_html", 1]],
     "deployed_technologies": [["github", 13]],
-    "live_demo": "https://jimjitsuesq.github.io/random-quote-generator/",
-    "github_client_link": "https://github.com/jimjitsuesq/random-quote-generator",
+    "live_demo": "https://jimjitsuesq.github.io/portfolio-random-quote-generator/",
+    "github_client_link": "https://github.com/jimjitsuesq/portfolio-random-quote-generator",
     "github_server_link": 0,
     "screenshots": 3,
-    "description": "<p>A JavaScript site that asynchronously fetches data from <a href=\"http:\/\/randomuser.me\">randomuser.me<\/a>, a public API, and displays it.<\/p>\r\n        <ul>\r\n        <li>This was the fifth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n        <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n        <li>The main focuses of this project were on fetching data from an API and writing asynchronous functions using async\/await.<\/li>\r\n        <li>Other emphasis of this project were on creating modals and implementing search functionality.<\/li>\r\n      <\/ul>"
+    "description": "<p>A random quote generator.<\/p>\r\n<ul>\r\n<li>This was the first project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n<li>I received a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n\r\n<\/ul>"
   },
-    {
-        "id": 7,
-        "project_name": "Student Directory",
-        "description": "A searchable student directory.",
-        "technologies": ["JavaScript", "HTML", "CSS"],
-        "live_link": "https://jimjitsuesq.github.io/student-directory/",
-        "github_link": "https://github.com/jimjitsuesq/student-directory",
-        "thumbnail_url": "./images/StudentDirectory/StudentDirectory_square.png",
-        "image_urls": ["../images/StudentDirectory/StudentDirectory_landscape_0.png",  "../images/StudentDirectory/StudentDirectory_landscape_1.png"]
-    }
+  {
+    "id": 7,
+    "project_name": "Student Directory",
+    "project_name_short": "student-directory",
+    "built_technologies": [["javascript", 5], ["css_html", 1]],
+    "deployed_technologies": [["github", 13]],
+    "live_demo": "https://jimjitsuesq.github.io/portfolio-student-directory/",
+    "github_client_link": "https://github.com/jimjitsuesq/portfolio-student-directory",
+    "github_server_link": 0,
+    "screenshots": 2,
+    "description": "<p>A JavaScript site that displays a list of students from an included data file.<\/p>\r\n<ul>\r\n  <li>This was the second project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n  <li>I received a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n  <li>The main focuses were on creating functions, working with arrays and implementing event listeners.<\/li>\r\n<\/ul>"
+  }
 ]}
