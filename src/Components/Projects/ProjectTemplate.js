@@ -10,19 +10,20 @@ const ProjectTemplate = (props) => {
   const [show, setShow] = useState(false);
   const [screenshot, setScreenshot] = useState();
   let { id } = useParams();
-  let builtTechnologies = projects[id].built_technologies
+  let currentProject = projects[id]
+  let builtTechnologies = currentProject.built_technologies
+  let deployedTechnologies= currentProject.deployed_technologies
   
-  let deployedTechnologies= projects[id].deployed_technologies
   const handlePicClick = (e) => {
     if (show) {
       setShow(false);
     } else {
-      setScreenshot(require(`../../images/projects/${projects[id].project_name_short}/${e.target.alt}.jpg`))
+      setScreenshot(require(`../../images/projects/${currentProject.project_name_path}/${e.target.alt}.jpg`))
       setShow(true);
     }
   }
   function generateDescription () {
-    const description = projects[id].description;
+    const description = currentProject.description;
     const sanitizer = DOMPurify.sanitize;
     return (
       <div dangerouslySetInnerHTML={{__html: sanitizer(`${description}`)}} /> 
@@ -31,7 +32,7 @@ const ProjectTemplate = (props) => {
   return (
     <>
       <header>
-        <h1>{`${projects[id].project_name}`}</h1>
+        <h1>{`${currentProject.project_name}`}</h1>
       </header>
       <main>
         <div className="project-container">
@@ -42,18 +43,21 @@ const ProjectTemplate = (props) => {
               <RightSidebar id={id} 
                             onClickPic={handlePicClick}
               />
+              <div className="project-technology-flex">
               <div className="project-technology-container">
                 <TechnologyBox  title={"Built With"}
                                 type={builtTechnologies}
                 />
+              </div>
+              <div className="project-technology-container">
                 <TechnologyBox  title={"Deployed With"}
                                 type={deployedTechnologies}
                 />
               </div>
+              </div>
             </div>
         </div>
       </main>
-      
       {  show ? <div  className='screenshot-modal' 
                       onClick={handlePicClick}>
                         <img  

@@ -3,8 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 
 import Sidebar from './Components/Sidebar';
 import Home from './Components/Home';
-import Projects from './Components/Projects/ProjectGallery';
+import About from './Components/About';
+import Contact from './Components/Contact';
 import Project from './Components/Projects/ProjectTemplate';
+import ProjectGallery from './Components/Projects/ProjectGallery';
 
 function App() {
   return (
@@ -15,13 +17,18 @@ function App() {
                     component={Project}
             />
             <Route  exact path="/projects"
-                    component={Projects}
+                    component={ProjectGallery}
+            />
+            <Route  exact path="/about"
+                    component={About}
+            />
+            <Route  exact path="/contact"
+                    component={Contact}
             />
             <Route  exact path="/"
                     component={Home}
             />
           </Switch>
-            
     </div>
   );
 }
