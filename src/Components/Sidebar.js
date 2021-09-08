@@ -12,18 +12,18 @@ const Sidebar = () => {
     if (show) { 
       setShow(false);
     } else {
-        setShow(true)
+      setShow(true)
     }
   }
-  function checkPage () {
-    if(location.pathname.includes('project')) {
-       setShow(true)
-    }
-  }
+  // function checkPage () {
+  //   if(location.pathname.includes('project')) {
+  //      setShow(true)
+  //   }
+  // }
 
-  useEffect(() => {
-    checkPage()
-  })
+  // useEffect(() => {
+  //   checkPage()
+  // })
 
   return (
     <aside>
@@ -40,18 +40,22 @@ const Sidebar = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink  exact to="/About"
+                <NavLink  exact to="/about"
                           activeClassName="selected">
                           About
                 </NavLink>
             </li>
             <li>
-                <button onClick={handleNavClick}> Projects </button>
-                
+                {/* <button onClick={handleNavClick}> Projects </button> */}
+                <NavLink  exact to="/projects"
+                          activeClassName="selected"
+                          onClick={handleNavClick}>
+                          Projects
+                </NavLink>
             </li>
             { show ? <ProjectMenu /> : "" }
             <li>
-                <NavLink  exact to="/Contact"
+                <NavLink  exact to="/contact"
                           activeClassName="selected">
                           Contact
                 </NavLink>

@@ -123,6 +123,38 @@ main {
   display:flex;
 }
 
+/* Project gallery */
+
+.project-gallery {
+  background: rgba(24, 55, 87, 0.79);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.project-gallery-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 300px;
+}
+
+.project-gallery h2 {
+  font-size: 24px;
+  line-height: 1em;
+  margin: auto;
+  text-align: center;
+}
+
+.project-gallery img {
+  width: 300px; 
+  padding-bottom: 10px;
+}
+
 /* Right sidebar */
 
 .right-sidebar {
