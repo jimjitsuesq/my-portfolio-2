@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import { useParams } from 'react-router';
 import DOMPurify from 'dompurify';
 
-import { projects } from './../../projects.json'
-import { logos } from './../../logos.json'
+import { projects } from '../../projects.json'
+import { logos } from '../../logos.json'
 
-const Project = (props) => {
+const ProjectTemplate = (props) => {
   const [show, setShow] = useState(false);
   const [screenshot, setScreenshot] = useState();
   let { id } = useParams();
@@ -38,46 +38,13 @@ const Project = (props) => {
       <h1>{`${projects[id].project_name}`}</h1>
     </header>
     <main>
+    
+    <div className="project-container">
+        <div className="main-grid">
         <div className="project-text-container">
           {generateDescription()}
         </div>
-        <div className="project-technology-container">
-          <div className="project-technology-box">
-            <h3>Built Using</h3>
-            <div className="project-technology-box-logo-container">
-              {projects[id].built_technologies.map((technology, i) => {
-                  return (
-                  <img  
-                        key={i}
-                        src={require(`../../images/projects/logos/${logos[projects[id].built_technologies[i][1]].logo_name}.svg`).default} 
-                        alt={`${logos[projects[id].built_technologies[i][1]].logo_alt}`} 
-                        height={`${logos[projects[id].built_technologies[i][1]].logo_height}`}
-                        style={{paddingTop: `${logos[projects[id].built_technologies[i][1]].logo_padding_top}`, paddingRight: `${logos[projects[id].built_technologies[i][1]].logo_padding_right}`, paddingBottom: `${logos[projects[id].built_technologies[i][1]].logo_padding_bottom}`, paddingLeft: `${logos[projects[id].built_technologies[i][1]].logo_padding_left}`}}
-                        
-                  />
-                  )
-              })}
-            </div>
-          </div>
-          <div className="project-technology-box">
-            <h3>Deployed With</h3>
-            <div className="project-technology-box-logo-container">
-            {projects[id].deployed_technologies.map((technology, i) => {
-                  return (
-                  <img  
-                        key={i}
-                        src={require(`../../images/projects/logos/${logos[projects[id].deployed_technologies[i][1]].logo_name}.svg`).default} 
-                        alt={`${logos[projects[id].deployed_technologies[i][1]].logo_alt}`} 
-                        height={`${logos[projects[id].deployed_technologies[i][1]].logo_height}`}
-                        style={{paddingTop: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_top}`, paddingRight: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_right}`, paddingBottom: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_bottom}`, paddingLeft: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_left}`}}
-                  />
-                  )
-              })}
-            </div>
-          </div>
-        </div>
-    </main>
-    <div className="right-sidebar">
+        <div className="right-sidebar">
       <div className="right-sidebar-links">
         {`${projects[id].github_server_link}` === '0' ? 
           <a href={`${projects[id].github_client_link}`} 
@@ -122,6 +89,45 @@ const Project = (props) => {
         })}
       </div>
     </div>
+        <div className="project-technology-container">
+          <div className="project-technology-box">
+            <h3>Built Using</h3>
+            <div className="project-technology-box-logo-container">
+              {projects[id].built_technologies.map((technology, i) => {
+                  return (
+                  <img  
+                        key={i}
+                        src={require(`../../images/projects/logos/${logos[projects[id].built_technologies[i][1]].logo_name}.svg`).default} 
+                        alt={`${logos[projects[id].built_technologies[i][1]].logo_alt}`} 
+                        height={`${logos[projects[id].built_technologies[i][1]].logo_height}`}
+                        style={{paddingTop: `${logos[projects[id].built_technologies[i][1]].logo_padding_top}`, paddingRight: `${logos[projects[id].built_technologies[i][1]].logo_padding_right}`, paddingBottom: `${logos[projects[id].built_technologies[i][1]].logo_padding_bottom}`, paddingLeft: `${logos[projects[id].built_technologies[i][1]].logo_padding_left}`}}
+                        
+                  />
+                  )
+              })}
+            </div>
+          </div>
+          <div className="project-technology-box">
+            <h3>Deployed With</h3>
+            <div className="project-technology-box-logo-container">
+            {projects[id].deployed_technologies.map((technology, i) => {
+                  return (
+                  <img  
+                        key={i}
+                        src={require(`../../images/projects/logos/${logos[projects[id].deployed_technologies[i][1]].logo_name}.svg`).default} 
+                        alt={`${logos[projects[id].deployed_technologies[i][1]].logo_alt}`} 
+                        height={`${logos[projects[id].deployed_technologies[i][1]].logo_height}`}
+                        style={{paddingTop: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_top}`, paddingRight: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_right}`, paddingBottom: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_bottom}`, paddingLeft: `${logos[projects[id].deployed_technologies[i][1]].logo_padding_left}`}}
+                  />
+                  )
+              })}
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
     {  show ? <div  className='screenshot-modal' 
                     onClick={handlePicClick}>
                       <img  
@@ -132,4 +138,4 @@ const Project = (props) => {
   </>
 )};
 
-export default Project;
+export default ProjectTemplate;

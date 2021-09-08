@@ -40,9 +40,9 @@
     "logo_name": "google_cloud",
     "logo_alt": "google cloud logo",
     "logo_height": "40px",
-    "logo_padding_top": "27px",
+    "logo_padding_top": "20px",
     "logo_padding_right": "20px",
-    "logo_padding_bottom": "27px",
+    "logo_padding_bottom": "20px",
     "logo_padding_left": "0px"
   },
   { 
@@ -115,7 +115,11 @@
     "id": 12,
     "logo_name": "sqlite",
     "logo_alt": "sqlite logo",
-    "logo_height": "50px"
+    "logo_height": "50px",
+    "logo_padding_top": "20px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "20px",
+    "logo_padding_left": "0px"
   },
   {
     "id": 13,

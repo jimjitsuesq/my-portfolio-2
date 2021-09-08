@@ -3,8 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 
 import Sidebar from './Components/Sidebar';
 import Home from './Components/Home';
-import Projects from './Components/Projects/Projects';
-import Project from './Components/Projects/Project';
+import Projects from './Components/Projects/ProjectGallery';
+import Project from './Components/Projects/ProjectTemplate';
 
 function App() {
   return (

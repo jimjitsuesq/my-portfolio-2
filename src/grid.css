@@ -5,13 +5,13 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px minmax(350px,1100px) 340px;
+    grid-template-columns: 200px minmax(350px,100%);
     grid-template-rows: 80px;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
     grid-template-areas: 
       "aside header header"
-      "aside main main2";
+      "aside main main";
 }
   
 header {
@@ -25,10 +25,16 @@ aside {
 }
 
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
-right-sidebar {
-  grid-area: main2;
-  display: flex;
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(350px, 100%) 340px;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas:
+    "text right-side"
+    "tech right-side"
 }
+

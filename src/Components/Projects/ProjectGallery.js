@@ -1,7 +1,7 @@
 import React from 'react';
-import { projects } from './../../projects.json'
+import { projects } from '../../projects.json'
 
-function Projects () {
+function ProjectGallery () {
   const projectArray = [];
   function generateProjectArray () {
     for (let i = 0; i < 8; i++) {
@@ -35,4 +35,4 @@ function Projects () {
 )
   }
 
-export default Projects;
+export default ProjectGallery;

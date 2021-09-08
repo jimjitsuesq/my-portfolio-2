@@ -28,13 +28,15 @@ header {
   color: #ffffff;
   background: rgba(24, 55, 87, 0.79);
   max-width: 100%;
+  min-width: 813px;
+  gap: 20px;
   justify-content: center;
 }
 
 header h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Open Sans;
-  font-size: 48px;
+  font-size:42px;
   font-weight: normal;
   text-align: center;
 }
@@ -45,12 +47,17 @@ main {
   color: #ffffff;
   justify-content: left;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* Main home area */
 
 .home-text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  min-width: 300px;
+  max-height: 300px;
   margin-top: -100px;
   background: rgba(24, 55, 87, 0.79);
   font-size: 24px;
@@ -63,16 +70,24 @@ main {
   font-family: Arima Madurai;
   font-size: 48px;
   font-weight: bold;
+  padding-right: 20px;
   margin: 0px;
 }
 
 /* Main project area */
 
+.project-container {
+  display: flex;
+  flex-direction: row;
+  min-width: 912px;
+}
+
 .project-text-container {
   background: rgba(24, 55, 87, 0.79);
   font-size: 24px;
   padding: 20px;
-  margin-bottom: 20px;
+  min-width: 514px;
+  max-width: 1300px;
 }
 
 .project-text-container a {
@@ -87,26 +102,34 @@ main {
 }
 
 .project-technology-container {
+  grid-area: tech;
   background: rgba(24, 55, 87, 0.79);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding: 20px;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 514px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   gap: 20px;
 }
 
 .project-technology-box {
   height: 140px;
   min-width: 500px;
+  width: 100%;
   word-break:break-all;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #ffffff;
   display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding:5px;
-  padding-bottom: 20px;
-  flex: 1;
 }
 
 .project-technology-box h3 {
@@ -158,11 +181,12 @@ main {
 /* Right sidebar */
 
 .right-sidebar {
-  gap: 20px;
+  grid-area: right-side;
+  width: 300px;
 }
 
 .right-sidebar-links {
-  padding-left:20px;
+  width: 340px;
   padding-top: 0px;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -190,13 +214,13 @@ main {
 
 .right-sidebar-screenshots {
   background: rgba(24, 55, 87, 0.79);
+  width: 340px;
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .right-sidebar img {
