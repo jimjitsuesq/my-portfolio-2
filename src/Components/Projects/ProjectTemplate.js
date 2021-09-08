@@ -3,7 +3,6 @@ import { useParams } from 'react-router';
 import DOMPurify from 'dompurify';
 
 import { projects } from '../../projects.json'
-import { logos } from '../../logos.json'
 import RightSidebar from './RightSidebar';
 import TechnologyBox from './TechnologyBox';
 
@@ -12,6 +11,7 @@ const ProjectTemplate = (props) => {
   const [screenshot, setScreenshot] = useState();
   let { id } = useParams();
   let builtTechnologies = projects[id].built_technologies
+  
   let deployedTechnologies= projects[id].deployed_technologies
   const handlePicClick = (e) => {
     if (show) {
@@ -29,41 +29,41 @@ const ProjectTemplate = (props) => {
     )
   }
   return (
-  <>
-    <header>
-      <h1>{`${projects[id].project_name}`}</h1>
-    </header>
-    <main>
-      <div className="project-container">
-          <div className="main-grid">
-            <div className="project-text-container">
-              {generateDescription()}
-            </div>
-            <RightSidebar id={id} 
-                          onClickPic={handlePicClick}
-            />
-            <div className="project-technology-container">
-              <TechnologyBox  id={id}
-                              title={"Built With"}
-                              type={builtTechnologies}
+    <>
+      <header>
+        <h1>{`${projects[id].project_name}`}</h1>
+      </header>
+      <main>
+        <div className="project-container">
+            <div className="main-grid">
+              <div className="project-text-container">
+                {generateDescription()}
+              </div>
+              <RightSidebar id={id} 
+                            onClickPic={handlePicClick}
               />
-              <TechnologyBox  id={id}
-                              title={"Deployed With"}
-                              type={deployedTechnologies}
-              />
+              <div className="project-technology-container">
+                <TechnologyBox  title={"Built With"}
+                                type={builtTechnologies}
+                />
+                <TechnologyBox  title={"Deployed With"}
+                                type={deployedTechnologies}
+                />
+              </div>
             </div>
-          </div>
-      </div>
-    </main>
-    
-    {  show ? <div  className='screenshot-modal' 
-                    onClick={handlePicClick}>
-                      <img  
-                        src={screenshot.default}
-                        alt={"Full-Size Screenshot"}
-                      /> 
-              </div> : '' }
-  </>
-)};
+        </div>
+      </main>
+      
+      {  show ? <div  className='screenshot-modal' 
+                      onClick={handlePicClick}>
+                        <img  
+                          src={screenshot.default}
+                          alt={"Full-Size Screenshot"}
+                        /> 
+                </div> : '' 
+      }
+    </>
+  )
+};
 
 export default ProjectTemplate;
