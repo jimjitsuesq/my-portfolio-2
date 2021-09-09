@@ -11,7 +11,7 @@ function ProjectMenu () {
   }
   generateProjectArray();
   return (
-  <ul className="nav-sub">
+  <ul className="left-sidebar-nav-sub">
     {projectArray.map((project, i) => {
       return(
         <li key={i}>

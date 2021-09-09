@@ -15,7 +15,7 @@ function ProjectGallery () {
       <h1>Projects</h1>
     </header>
     <main>
-      <div className="project-gallery">
+      <div className="project-gallery-wrapper">
         {projectArray.map((project, i) => {
           return (
             <div className="project-gallery-project-container" key={i}>

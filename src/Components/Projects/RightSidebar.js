@@ -13,7 +13,7 @@ function RightSidebar (props) {
   generateScreenshotsArray();
   return (
     <div className="right-sidebar">
-      <div className="right-sidebar-links">
+      <div className="right-sidebar-links-container">
         {`${currentProject.github_server_link}` === '0' ? 
           <a href={`${currentProject.github_client_link}`} 
               target="_blank" 
@@ -45,7 +45,7 @@ function RightSidebar (props) {
             Live Demo
         </a>
       </div>
-      <div className="right-sidebar-screenshots">
+      <div className="right-sidebar-screenshots-container">
         {screenshotsArray.map((photo, i) => {
           return (
             <img  

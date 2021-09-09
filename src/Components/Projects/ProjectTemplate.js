@@ -35,21 +35,21 @@ const ProjectTemplate = (props) => {
         <h1>{`${currentProject.project_name}`}</h1>
       </header>
       <main>
-        <div className="project-container">
+        <div className="main-project-wrapper">
             <div className="main-grid">
-              <div className="project-text-container">
+              <div className="main-project-text-box">
                 {generateDescription()}
               </div>
               <RightSidebar id={id} 
                             onClickPic={handlePicClick}
               />
-              <div className="project-technology-flex">
-              <div className="project-technology-container">
+              <div className="main-project-technology-wrapper">
+              <div className="main-project-technology-container">
                 <TechnologyBox  title={"Built With"}
                                 type={builtTechnologies}
                 />
               </div>
-              <div className="project-technology-container">
+              <div className="main-project-technology-container">
                 <TechnologyBox  title={"Deployed With"}
                                 type={deployedTechnologies}
                 />

@@ -15,12 +15,12 @@ const Sidebar = () => {
   }
   return (
     <aside>
-        <img className="headshot" src={headShot} alt='Jim Peters' height='134px' width='111px' />
-        <div className="headshot-text-container">
+        <img className="left-sidebar-headshot" src={headShot} alt='Jim Peters' height='134px' width='111px' />
+        <div className="left-sidebar-text-container">
             <h2>Jim Peters</h2>
             <h3>Full-Stack Developer</h3>
         </div>
-        <ul className="nav">
+        <ul className="left-sidebar-nav">
             <li>
                 <NavLink  exact to="/"
                           activeClassName="selected">
