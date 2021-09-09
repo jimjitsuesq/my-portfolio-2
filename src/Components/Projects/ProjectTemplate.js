@@ -31,12 +31,12 @@ const ProjectTemplate = (props) => {
   }
   return (
     <>
-      <header>
-        <h1>{`${currentProject.project_name}`}</h1>
-      </header>
       <main>
-        <div className="main-project-wrapper">
-            <div className="main-grid">
+      <div className="project-grid">
+        <div className="project-header">
+          <h1>{`${currentProject.project_name}`}</h1>
+        </div>
+          <div className="main-project-wrapper">
               <div className="main-project-text-box">
                 {generateDescription()}
               </div>
@@ -44,16 +44,16 @@ const ProjectTemplate = (props) => {
                             onClickPic={handlePicClick}
               />
               <div className="main-project-technology-wrapper">
-              <div className="main-project-technology-container">
-                <TechnologyBox  title={"Built With"}
-                                type={builtTechnologies}
-                />
-              </div>
-              <div className="main-project-technology-container">
-                <TechnologyBox  title={"Deployed With"}
-                                type={deployedTechnologies}
-                />
-              </div>
+                <div className="main-project-technology-container">
+                  <TechnologyBox  title={"Built With"}
+                                  type={builtTechnologies}
+                  />
+                </div>
+                <div className="main-project-technology-container">
+                  <TechnologyBox  title={"Deployed With"}
+                                  type={deployedTechnologies}
+                  />
+                </div>
               </div>
             </div>
         </div>

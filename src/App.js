@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Sidebar from './Components/Sidebar';
+import LeftSidebar from './Components/LeftSidebar';
 import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
@@ -11,7 +11,7 @@ import ProjectGallery from './Components/Projects/ProjectGallery';
 function App() {
   return (
     <div className="container">
-        <Sidebar />
+        <LeftSidebar />
           <Switch>
             <Route  exact path="/projects/:id" 
                     component={Project}

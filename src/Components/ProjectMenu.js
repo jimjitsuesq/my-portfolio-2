@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { projects } from '../projects.json'
 
-function ProjectMenu () {
+function ProjectMenu (props) {
   const projectArray = [];
   function generateProjectArray () {
     for (let i = 0; i < projects.length; i++) {

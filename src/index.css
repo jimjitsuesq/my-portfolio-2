@@ -21,36 +21,35 @@ a {
   color: #ffffff;
 }
 
-/* Header */
+/* Main home area */
+/*#region*/
 
-header {
+.home-header {
   background: rgba(24, 55, 87, 0.79);
-  max-width: 100%;
-  min-width: 813px;
-  gap: 20px;
+  min-width: 400px;
+  max-width: 920px;
   justify-content: center;
 }
 
-header h1 {
+.home-header h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arima Madurai;
   font-size: 42px;
   font-weight: 400;
+  line-height: 1em;
   text-align: center;
 }
 
-/* Main home area */
-/*#region*/
 .home-text-container {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
-  min-width: 300px;
-  max-height: 300px;
-  margin-top: -100px;
+  min-width: 400px;
+  max-width: 880px;
+  height: fit-content;
   background: rgba(24, 55, 87, 0.79);
   font-size: 24px;
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
+  flex: 1;
 }
 
 .home-text-container h1 {
@@ -65,18 +64,39 @@ header h1 {
 /* Main project area */
 /*#region*/
 
+.project-header {
+  background: rgba(24, 55, 87, 0.79);
+  max-width: 1280px;
+  min-width: 700px;
+  justify-content: center;
+}
+
+.project-header h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Arima Madurai;
+  line-height: 1em;
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .main-project-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  min-width: 912px;
+  min-width: 700px;
+  max-width: 1300px;
+  row-gap: 20px;
 }
 
 .main-project-text-box {
   background: rgba(24, 55, 87, 0.79);
   font-size: 24px;
   padding: 20px;
-  min-width: 514px;
-  max-width: 1300px;
+  min-width: 400px;
+  max-width: 880px;
+  margin-right: 20px;
+  flex: 1;
 }
 
 .main-project-text-box a {
@@ -133,51 +153,16 @@ header h1 {
 
 /*#endregion*/
 
-/* Project gallery */
-/*#region*/
-.project-gallery-wrapper {
-  display: flex;
-  background: rgba(24, 55, 87, 0.79);
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 50px 20px 20px 20px;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.project-gallery-project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-}
-
-.project-gallery-project-container h2 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1em;
-  margin-top: 0;
-  text-align: center;
-}
-
-.project-gallery-project-container img {
-  width: 300px;
-  padding-bottom: 5px;
-}
-/*#endregion*/
-
 /* Right sidebar */
 /*#region*/
 .right-sidebar {
-  grid-area: right-side;
-  width: 300px;
+  width: 340px;
 }
 
 .right-sidebar-links-container {
   display: flex;
   width: 340px;
   padding-top: 0px;
-  padding-right: 20px;
   margin-bottom: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -200,13 +185,13 @@ header h1 {
 .right-sidebar-screenshots-container {
   display: flex;
   background: rgba(24, 55, 87, 0.79);
-  width: 340px;
   padding-top: 20px;
   padding-bottom: 20px;
   gap: 20px;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex:1;
 }
 
 /*#endregion*/
@@ -217,6 +202,7 @@ aside {
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
+  width: 200px;
   height: 100%;
   font-weight: 400;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -269,10 +255,9 @@ aside ul {
 .left-sidebar-nav a {
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 14px;
+  justify-content: center;
   height: 51px;
-  width: 186px;
+  width: 200px;
 }
 
 .left-sidebar-nav a:hover {
@@ -297,8 +282,8 @@ aside ul {
   display: inline-flex;
   font-size: 18px;
   height: 30px;
-  width: 170px;
-  padding-left: 20px;
+  width: 190px;
+  padding-left: 10px;
   justify-content: flex-start;
 }
 
@@ -331,3 +316,53 @@ aside ul {
 .screenshot-modal img {
   height: 80%;
 }
+
+/* Project gallery */
+/*#region*/
+.project-gallery-wrapper {
+  background: rgba(24, 55, 87, 0.79);
+  display: flex;
+  flex-wrap: wrap;
+  height:fit-content;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.project-gallery-header {
+  background: rgba(24, 55, 87, 0.79);
+  max-width: 100%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-gallery-header h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Arima Madurai;
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.project-gallery-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.project-gallery-project-container h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-gallery-project-container img {
+  width: 300px;
+  padding-bottom: 5px;
+}
+/*#endregion*/
