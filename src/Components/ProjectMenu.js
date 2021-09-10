@@ -15,11 +15,11 @@ function ProjectMenu (props) {
     {projectArray.map((project, i) => {
       return(
         <li key={i}>
-        <NavLink  key={i}
-                  exact to={`/projects/${i}`}
-                  activeClassName="selected">
-                  {`${project}`}
-        </NavLink>
+          <NavLink  key={i}
+                    exact to={`/projects/${i}`}
+                    activeClassName="selected">
+                    {`${project}`}
+          </NavLink>
         </li>
       )
     })}

@@ -32,10 +32,10 @@ const ProjectTemplate = (props) => {
   return (
     <>
       <main>
-      <div className="project-grid">
-        <div className="project-header">
-          <h1>{`${currentProject.project_name}`}</h1>
-        </div>
+        <div className="project-grid">
+          <div className="project-header">
+            <h1>{`${currentProject.project_name}`}</h1>
+          </div>
           <div className="main-project-wrapper">
               <div className="main-project-text-box">
                 {generateDescription()}
@@ -55,8 +55,8 @@ const ProjectTemplate = (props) => {
                   />
                 </div>
               </div>
-            </div>
-        </div>
+          </div>
+          </div>
       </main>
       {  show ? <div  className='screenshot-modal' 
                       onClick={handlePicClick}>
@@ -64,7 +64,8 @@ const ProjectTemplate = (props) => {
                           src={screenshot.default}
                           alt={"Full-Size Screenshot"}
                         /> 
-                </div> : '' 
+                </div>
+                : '' 
       }
     </>
   )

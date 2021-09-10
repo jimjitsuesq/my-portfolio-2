@@ -69,6 +69,7 @@ a {
   max-width: 1280px;
   min-width: 700px;
   justify-content: center;
+  align-items: center;
 }
 
 .project-header h1 {
@@ -273,6 +274,8 @@ aside ul {
   border-top: 1px solid #262E31;
 }
 
+/*Left sidebar project sub-menu */
+
 .left-sidebar-nav-sub {
   display: flex;
   flex-direction: column;
@@ -293,13 +296,6 @@ aside ul {
   padding-right:5px;
 }
 
-.triangle-right {
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-left: 100px solid #ffffff;
-  border-bottom: 50px solid transparent;
-}
 /*#endregion*/
 
 /* Modal */
@@ -366,3 +362,54 @@ aside ul {
   padding-bottom: 5px;
 }
 /*#endregion*/
+
+.slide-enter,
+.slide-exit {
+  transition: transform 1000ms ease;
+}
+
+.slide-enter {
+  transform: translateY(100%);
+}
+
+.slide-enter.slide-enter-active {
+  transform: translateY(0%);
+}
+
+.slide-exit {
+  position:fixed;
+  top: 0;
+  left: 200;
+  width: 1080px;
+  transform: translateY(0%);
+}
+
+.slide-exit-active {
+  transform: translateY(-100%);
+} 
+
+.page-fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter-active {
+  opacity: 0;
+  transition: opacity 5000ms;
+}
+
+.page-fade-enter-done {
+  opacity: 1;
+}
+
+.page-fade-exit {
+  opacity: 0;
+}
+
+.page-fade-exit-active {
+  opacity: 0;
+  transition: opacity 5000ms;
+}
+
+.page-fade-exit-done {
+  opacity: 1;
+}

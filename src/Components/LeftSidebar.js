@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import ProjectMenu from './ProjectMenu';
-import headShot from '../a3.jpg';
+import headShot from '../a3.JPG';
 
 const LeftSidebar = () => {
   const [show, setShow] = useState(false);
@@ -25,18 +25,17 @@ const LeftSidebar = () => {
   useEffect(()=> {
     checkPage()
   }, [checkPage])
-  
+
   return (
     <aside>
         <img  className="left-sidebar-headshot" 
               src={headShot} 
-              alt='Jim Peters' 
-              height='134px' 
-              width='111px' 
+              alt='Jim Peters'
+              width='160px' 
         />
         <div className="left-sidebar-text-container">
-            <h2>Jim Peters</h2>
-            <h3>Full-Stack Developer</h3>
+          <h2>Jim Peters</h2>
+          <h3>Full-Stack Developer</h3>
         </div>
         <ul className="left-sidebar-nav">
             <li>
@@ -61,9 +60,11 @@ const LeftSidebar = () => {
                           Projects
                 </NavLink>
             </li>
-            { show  ? <ProjectMenu 
+            { show  ? 
+                      <ProjectMenu 
                         onClick={handleNavClickFromProjects}
-                      /> 
+                      />
+                      
                     : "" }
             <li>
                 <NavLink  exact to="/contact"
