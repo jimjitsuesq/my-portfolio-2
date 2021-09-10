@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  color:#ffffff;
+  color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   margin: 20px;
   background-image: url('background.jpg');
@@ -13,7 +13,11 @@ body {
 }
 
 p {
-  margin: 0px;
+  margin: 0 0 1em 0;
+}
+
+body p:last-child {
+  margin-bottom: 0em;
 }
 
 a {
@@ -59,6 +63,7 @@ a {
   padding-right: 20px;
   margin: 0px;
 }
+
 /*#endregion*/
 
 /* Main project area */
@@ -192,7 +197,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex:1;
+  flex: 1;
 }
 
 /*#endregion*/
@@ -293,7 +298,7 @@ aside ul {
 .left-sidebar-nav-sub a::before {
   content: "\003E";
   display: inline;
-  padding-right:5px;
+  padding-right: 5px;
 }
 
 /*#endregion*/
@@ -319,7 +324,7 @@ aside ul {
   background: rgba(24, 55, 87, 0.79);
   display: flex;
   flex-wrap: wrap;
-  height:fit-content;
+  height: fit-content;
   gap: 20px;
   padding: 20px;
   justify-content: center;
@@ -361,6 +366,7 @@ aside ul {
   width: 300px;
   padding-bottom: 5px;
 }
+
 /*#endregion*/
 
 .slide-enter,
@@ -377,7 +383,7 @@ aside ul {
 }
 
 .slide-exit {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 200;
   width: 1080px;
@@ -386,7 +392,7 @@ aside ul {
 
 .slide-exit-active {
   transform: translateY(-100%);
-} 
+}
 
 .page-fade-enter {
   opacity: 0;

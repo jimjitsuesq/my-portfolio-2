@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Contact = () => (
   <main>
@@ -7,10 +7,10 @@ const Contact = () => (
         <h1>Contact Me</h1>
       </div>
       <div className="home-text-container">
-          <p>Contact me.</p>
+        <p>Contact me.</p>
       </div>
     </div>
   </main>
-)
+);
 
 export default Contact;
