@@ -17,7 +17,7 @@
     "project_name": "Full-Stack Academic Curriculum Manager",
     "project_name_short": "Full-Stack ACM",
     "project_name_path": "acm",
-    "description": "<p>A full-stack application that manages the curriculum offerings of an academic institution and allows registered teachers to view, create, edit and delete courses they offer.<\/p>\r\n        <ul>\r\n          <li>The client and server were the ninth and tenth projects, respectively, in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n          <li>I received grades of &quot;Exceeds Expectations&quot; (the highest grade available) for both projects.<\/li>\r\n        <\/ul>\r\n        <h3>Server<\/h3>\r\n        <p>The backend REST API is written in NodeJS and uses the ExpressJS framework to handle user authorization, routing and MySQL queries written using Sequelize ORM.  The server is deployed using the Google App Engine on the Google Cloud Platform.<\/p>\r\n        <h3>Database<\/h3>\r\n        <p>The MySQL database is also hosted on Google Cloud using the Google Compute Engine.  Originally, the project utilized a simple SQLite database, but after I completed the Treehouse bootcamp I wanted to expand the project and my knowledge of hosted MySQL solutions, so I upgraded it.<\/p>\r\n        <h3>Client<\/h3>\r\n        <p>The frontend is written using ReactJS to display the site, interact with the server, handle data validation and make the site accessible. The site is deployed to Netlify and was originally written in React&#39;s older &quot;class&quot; syntax, but after completing the Treehouse bootcamp I completely rewrote it using React Hooks. This challenge was a way to get more practice using these newer functions, to better understand &quot;state&quot; and to streamline the app for deployment.<\/p>",
+    "description": "<p>A full-stack application that manages a school's curriculum and allows registered teachers to create, view, edit and delete courses they offer.\n        <ul>\n          <li>The client and server were the ninth and tenth projects, respectively, in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received grades of &quot;Exceeds Expectations&quot; (the highest available) for both projects.</li>\n        </ul>\n        <h3>Server (REST API)</h3>\n        <ul>\n          <li>Written in NodeJS and uses the ExpressJS framework.</li>\n          <li> Handles user authorization, routing and MySQL queries asynchronously using Sequelize ORM.</li>  \n          <li>Deployed using Google App Engine on the Google Cloud Platform.</li>\n        </ul>\n        <h3>Database</h3>\n        <p>The MySQL database is also hosted on Google Cloud using the Google Compute Engine.  \n        <p></p>Originally, the project had a simple SQLite database, but after I completed the Treehouse bootcamp I wanted to expand the project and my knowledge of hosted MySQL solutions, so I upgraded it.\n        <h3>Client</h3>\n        <p>The frontend client is written using ReactJS.\n        <ul> \n          <li>React displays the site, interacts with the server, handles data validation and makes the site more responsive.</li> \n          <li>The site is deployed to Netlify and was originally written in React&#39;s older &quot;class&quot; syntax, but after completing the Treehouse bootcamp I completely rewrote it using more modern React Hooks.</li>\n        </ul>\n        <p>This challenge was a way to get more practice using these newer, \"stateful\" functions and to streamline the app for deployment.",
     "built_technologies": [["nodejs", 8], ["expressjs", 2], ["reactjs", 11], ["mysql", 6]],
     "deployed_technologies": [["google_cloud", 4], ["netlify", 7]],
     "live_demo": "https://portfolio-acm-client.netlify.app/",
@@ -36,7 +36,7 @@
       "github_client_link": "https://github.com/jimjitsuesq/portfolio-flickr-search",
       "github_server_link": 0,
       "screenshots": 3,
-      "description": "<p>An app written in ReactJS that searches Flickr for photos using their API and displays them in a gallery.<\/p> \r\n            <ul>\r\n              <li>The seventh project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp program.<\/li>\r\n              <li>Received a grade of \"Exceeds Expectations\" (the highest grade available).<\/li>\r\n              <li>Used the Axios package to make asyncrounous fetch requests from Flickr.<\/li>\r\n              <li>Used React Router to track, manipulate and harness the browser history to allow users to browse backwards and forwards through their searches.<\/li>\r\n            <\/ul>\r\n            <p>The app was originally written in React's older \"class\" syntax, but after completing the Treehouse bootcamp I completely rewrote it using React Hooks. This challenge was a way to get more practice using these newer functions, to better understand \"state\" and to streamline the app for deployment.</p>"
+      "description": "<p>An app written in ReactJS that searches Flickr for photos using their API then displays them in a gallery.\n        <ul>\n          <li>This was the seventh project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp program.</li>\n          <li>I received a grade of \"Exceeds Expectations\" (the highest available).</li>\n          <li>Uses Axios to make asynchronous requests from Flickr.</li>\n          <li>Uses React Router to track, manipulate and harness the browser history to allow users to browse back and forth through their searches.</li>\n        </ul>\n        <p>The app was originally written in React's older \"class\" syntax, but after completing the Treehouse bootcamp I completely rewrote it using more modern React Hooks. \n        <p>This challenge was a way to get more practice using these newer functions, to better understand \"state\" and to streamline the app for deployment."
   },
   {
       "id": 3,
@@ -49,7 +49,7 @@
       "github_client_link": "https://github.com/jimjitsuesq/portfolio-sql-library-manager",
       "github_server_link": 0,
       "screenshots": 3,
-      "description": "<p>An application written using NodeJS and the ExpressJS framework to track a collection of books stored in a SQLite database with queries using the Sequelize ORM.  The views in the app are rendered using the Pug template engine.<\/p>\r\n        <p>Users are able to<\/p>\r\n        <ul>\r\n        <li>Search the database for books.<\/li>\r\n        <li>View details for each book.<\/li>\r\n        <li>Add a book to the collection.<\/li>\r\n        <li>Edit or delete the record that contains each book.<\/li>\r\n\r\n        <\/ul>\r\n        <p>The main focus in this project was on expanding knowledge of how to work with SQL queries.  There was also emphasis on validating, interacting with and displaying the data stored within the database.<\/p>\r\n        <p>This was the eighth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp. I received a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/p>"
+      "description": "<p>An application written using NodeJS and the ExpressJS framework to track a collection of books stored in a SQLite database. Queries are handled using the Sequelize ORM and views are rendered using the Pug template engine.\n        <p>Users are able to:\n        <ul>\n          <li>Search the database for books.</li>\n          <li>View details for each book.</li>\n          <li>Add a book to the collection.</li>\n          <li>Edit or delete each book's record.</li>\n        </ul>\n        <p>The main focus in this project was on expanding knowledge of working with SQL queries. There was also emphasis on validating, interacting with and displaying the data stored within the database.\n        <p>This was the eighth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp. I received a grade of &quot;Exceeds Expectations&quot; (the highest available)."
   },
   {
     "id": 4,
@@ -62,7 +62,7 @@
     "github_client_link": "https://github.com/jimjitsuesq/portfolio-phrase-hunter",
     "github_server_link": 0,
     "screenshots": 2,
-    "description": "<p>A browser-based JavaScript phrase guessing game similar to hangman or Wheel of Fortune.<\/p>\r\n        <ul>\r\n          <li>This was the fourth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n          <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n          <li>The main focuses of this project were on learning more complicated JavaScript functions, advanced object-oriented programming and using JavaScript class syntax.<\/li>\r\n        <\/ul>"
+    "description": "<p>A browser-based JavaScript phrase-guessing game similar to hangman or Wheel of Fortune.\n        <ul>\n          <li>This was the fourth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest available).</li>\n          <li>The main focuses of this project included learning more complicated JavaScript functions, advanced object-oriented programming and using JavaScript class syntax.</li>\n        </ul>"
   },
   {
     "id": 5,
@@ -75,7 +75,7 @@
     "github_client_link": "https://github.com/jimjitsuesq/portfolio-interactive-form",
     "github_server_link": 0,
     "screenshots": 2,
-    "description": "<p>An HTML\/JavaScript site containing a sign-up form for a developer conference.<\/p>\r\n<ul>\r\n<li>This was the third project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n<li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n<li>The main focuses of this project were on building form elements, data validation and practicing regular expressions.<\/li>\r\n\r\n<\/ul>"
+    "description": "        <p>An HTML/JavaScript site containing a sign-up form for a developer conference.\n        <ul>\n          <li>This was the third project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest available).</li>\n          <li>The main focuses of this project included building form elements, data validation and practicing regular expressions.</li>\n        </ul>"
   },
   {
     "id": 6,
@@ -88,7 +88,7 @@
     "github_client_link": "https://github.com/jimjitsuesq/portfolio-employee-directory",
     "github_server_link": 0,
     "screenshots": 3,
-    "description": "<p>A JavaScript site that asynchronously fetches data from <a href=\"http:\/\/randomuser.me\">randomuser.me<\/a>, a public API, and displays it.<\/p>\r\n        <ul>\r\n        <li>This was the fifth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n        <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n        <li>The main focuses of this project were on fetching data from an API and writing asynchronous functions using async\/await.<\/li>\r\n        <li>Other emphasis of this project were on creating modals and implementing search functionality.<\/li>\r\n      <\/ul>"
+    "description": "<p>A JavaScript site that asynchronously fetches fictitious user data from <a href=\"http://randomuser.me\">randomuser.me</a>, a public API, and displays it.</p>\n        <ul>\n          <li>This was the fifth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I receive a grade of &quot;Exceeds Expectations&quot; (the highest available).</li>\n          <li>The main focuses of this project including fetching data from an API and writing asynchronous functions using async/await.</li>\n          <li>Other emphases of this project were on creating modals and implementing real-time search functionality.</li>\n      </ul>"
   },
   {
     "id": 7,
@@ -101,7 +101,7 @@
     "github_client_link": "https://github.com/jimjitsuesq/portfolio-random-quote-generator",
     "github_server_link": 0,
     "screenshots": 3,
-    "description": "<p>A random quote generator.<\/p>\r\n<ul>\r\n<li>This was the first project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n<li>I received a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n\r\n<\/ul>"
+    "description": "        <p>A random quote generator.</p>\n        <ul>\n          <li>This was the first project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received a grade of &quot;Exceeds Expectations&quot; (the highest available).</li>\n        </ul>"
   },
   {
     "id": 8,
@@ -114,6 +114,6 @@
     "github_client_link": "https://github.com/jimjitsuesq/portfolio-student-directory",
     "github_server_link": 0,
     "screenshots": 2,
-    "description": "<p>A JavaScript site that displays a list of students from an included data file.<\/p>\r\n<ul>\r\n  <li>This was the second project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.<\/li>\r\n  <li>I received a grade of &quot;Exceeds Expectations&quot; (the highest grade available).<\/li>\r\n  <li>The main focuses were on creating functions, working with arrays and implementing event listeners.<\/li>\r\n<\/ul>"
+    "description": "<p>A JavaScript site that displays a list of students from an included data file.</p>\n        <ul>\n          <li>This was the second project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received a grade of &quot;Exceeds Expectations&quot; (the highest available).</li>\n          <li>The main focuses included creating functions, working with arrays and implementing event listeners.</li>\n        </ul>"
   }
 ]}
