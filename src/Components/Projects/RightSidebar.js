@@ -7,7 +7,7 @@ function RightSidebar (props) {
   const screenshotsArray = [];
   function generateScreenshotsArray () {
     for (let i = 0; i < currentProject.screenshots; i++) {
-      screenshotsArray.push(require(`../../images/projects/${currentProject.project_name_path}/thumbnail${i+1}.JPG`)) 
+      screenshotsArray.push(require(`../../images/projects/${currentProject.project_name_path}/thumbnail${i+1}.jpg`)) 
     }
   }
   generateScreenshotsArray();
