@@ -17,14 +17,11 @@ function App() {
       <TransitionGroup>
         <CSSTransition timeout={4000} classNames="slide" key={location.key}>
           <Switch location={location}>
-            <Route
-              exact
-              path="/projects/:id"
-              component={ProjectTemplate}
-            />
+            <Route exact path="/projects/:id" component={ProjectTemplate} />
             <Route exact path="/projects" component={ProjectGallery} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="resume" component={Home} />
             <Route exact path="/" component={Home} />
           </Switch>
         </CSSTransition>

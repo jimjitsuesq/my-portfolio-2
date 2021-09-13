@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { logos } from '../../logos.json'
+import { logos } from "../../logos.json";
 
-function TechnologyBox (props) {
+function TechnologyBox(props) {
   const logoArray = [];
-  function generateLogoArray () {
+  function generateLogoArray() {
     for (let i = 0; i < props.type.length; i++) {
-      logoArray.push(logos[props.type[i][1]]) 
+      logoArray.push(logos[props.type[i][1]]);
     }
   }
   generateLogoArray();
@@ -14,22 +14,28 @@ function TechnologyBox (props) {
     <div className="main-project-technology-box" id={`${props.title}`}>
       <h3>{props.title}</h3>
       <div className="main-project-technology-box-logo-container">
-        {logoArray.map((logo, i) => { 
+        {logoArray.map((logo, i) => {
           return (
-            <img  
+            <img
               key={i}
-              src={require(`../../images/projects/logos/${logo.logo_name}.svg`).default} 
-              alt={`${logo.logo_alt}`} 
+              src={
+                require(`../../images/projects/logos/${logo.logo_name}.svg`)
+                  .default
+              }
+              alt={`${logo.logo_alt}`}
               height={`${logo.logo_height}`}
-              style={{  paddingTop: `${logo.logo_padding_top}`, 
-                        paddingRight: `${logo.logo_padding_right}`, 
-                        paddingBottom: `${logo.logo_padding_bottom}`, 
-                        paddingLeft: `${logo.logo_padding_left}`}}
+              style={{
+                paddingTop: `${logo.logo_padding_top}`,
+                paddingRight: `${logo.logo_padding_right}`,
+                paddingBottom: `${logo.logo_padding_bottom}`,
+                paddingLeft: `${logo.logo_padding_left}`,
+              }}
             />
-          )
+          );
         })}
       </div>
-  </div>
-)};
+    </div>
+  );
+}
 
 export default TechnologyBox;

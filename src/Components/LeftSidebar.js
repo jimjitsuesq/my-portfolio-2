@@ -46,7 +46,7 @@ const LeftSidebar = () => {
         </li>
         <li>
           <NavLink exact to="/about" activeClassName="selected">
-            About
+            About Me
           </NavLink>
         </li>
         <li>
@@ -61,10 +61,24 @@ const LeftSidebar = () => {
         {show ? <ProjectMenu onClick={handleNavClickFromProjects} /> : ""}
         <li>
           <NavLink exact to="/contact" activeClassName="selected">
-            Contact
+            Contact Me
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/resume" activeClassName="selected">
+            My Resume
           </NavLink>
         </li>
       </ul>
+      <div className="left-sidebar-text-container">
+        <h4>Contact Info</h4>
+        <p>
+          <a href="mailto: jim@jimpeters.dev">Jim@JimPeters.dev</a>
+        </p>
+        <p>
+          <a href="tel:805-263-7140">(805) 263-7140</a>
+        </p>
+      </div>
     </aside>
   );
 };
