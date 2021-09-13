@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useLayoutEffect, useCallback } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import ProjectMenu from "./ProjectMenu";
@@ -22,7 +22,7 @@ const LeftSidebar = () => {
       setShow(true);
     }
   }, [location]);
-  useEffect(() => {
+  useLayoutEffect(() => {
     checkPage();
   }, [checkPage]);
 

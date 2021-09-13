@@ -369,13 +369,13 @@ aside ul {
 
 /*#endregion*/
 
-.slide-enter,
-.slide-exit {
-  transition: transform 1000ms ease;
+.slide-enter-active,
+.slide-exit-active {
+  transition: transform 2000ms ease;
 }
 
 .slide-enter {
-  transform: translateY(100%);
+  transform: translateY(100%)
 }
 
 .slide-enter.slide-enter-active {
@@ -383,7 +383,7 @@ aside ul {
 }
 
 .slide-exit {
-  position: fixed;
+  position:absolute;
   top: 0;
   left: 200;
   width: 1080px;

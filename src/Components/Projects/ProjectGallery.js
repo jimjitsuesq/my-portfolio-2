@@ -12,7 +12,6 @@ function ProjectGallery (props) {
   generateProjectArray()
   return (
     <main>
-      
       <div className="project-gallery-grid">
         <div className="project-gallery-header">
           <h1>Projects</h1>
@@ -25,6 +24,8 @@ function ProjectGallery (props) {
                   <img  src={require(`../../images/projects/${project[1]}/thumbnail.jpg`).default}
                         alt={`${project[0]} Screenshot`}
                         key={i}
+                        width={300}
+                        height={195}
                   />
                 </Link>
                 <h2> {project[0]} </h2>

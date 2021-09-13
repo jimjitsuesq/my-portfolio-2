@@ -15,7 +15,7 @@ function App() {
     <div className="container">
       <LeftSidebar />
       <TransitionGroup>
-        <CSSTransition timeout={1000} classNames="slide" key={location.key}>
+        <CSSTransition timeout={4000} classNames="slide" key={location.key}>
           <Switch location={location}>
             <Route
               exact
