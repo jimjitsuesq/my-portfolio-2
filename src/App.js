@@ -8,6 +8,8 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import ProjectGallery from "./Components/Projects/ProjectGallery";
 import ProjectTemplate from "./Components/Projects/ProjectTemplate";
+import Resume from "./Components/Resume";
+import Skills from "./Components/Skills";
 
 function App() {
   const location = useLocation();
@@ -21,7 +23,8 @@ function App() {
             <Route exact path="/projects" component={ProjectGallery} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="resume" component={Home} />
+            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/resume" component={Resume} />
             <Route exact path="/" component={Home} />
           </Switch>
         </CSSTransition>
