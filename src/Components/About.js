@@ -7,7 +7,7 @@ const About = () => (
         <h1>About Me</h1>
       </div>
       <div className="home-text-container">
-        <p>About me.</p>
+        <p>After a lifetime of interest and self-education in the area, I have fully committed to a life of learning within Software Engineering. </p>
       </div>
     </div>
   </main>

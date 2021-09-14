@@ -8,11 +8,13 @@ const Home = () => (
       </div>
       <div className="home-text-container">
         <p>
-          Recovering attorney currently pursuing a long-overdue career change
-          into the technology sector after a lifetime of interest and
-          self-education in the area. Problem-solving, puzzles, and figuring out
-          how things work are some of my favorite things. Brazilian Jiu Jitsu
-          Brown Belt and instructor.
+          Recovering-attorney-turned-software-developer who took advantage of Covid-19 to make a long-overdue career change into coding and software development. 
+        </p>
+        <p>
+          Problem-solving, puzzles, and figuring out how things work are some of my favorite things. Brazilian Jiu Jitsu Brown Belt and instructor.
+        </p>
+        <p>
+          Thanks for visiting.  Find out more about me <a href={'./about'}>here</a> or have a look at some of my projects <a href={'./Projects/ProjectGallery.js'}>here</a>.
         </p>
       </div>
     </div>
