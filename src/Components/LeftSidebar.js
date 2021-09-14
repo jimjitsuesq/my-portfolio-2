@@ -60,6 +60,11 @@ const LeftSidebar = () => {
         </li>
         {show ? <ProjectMenu onClick={handleNavClickFromProjects} /> : ""}
         <li>
+          <NavLink exact to="/skills" activeClassName="selected">
+            Skills
+          </NavLink>
+        </li>
+        <li>
           <NavLink exact to="/contact" activeClassName="selected">
             Contact Me
           </NavLink>
