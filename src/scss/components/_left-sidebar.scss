@@ -1,3 +1,5 @@
+@import '../animations';
+
 aside {
   @include flexy($dir: column, $aligni: center, $alignc: center);
   font-family: "Roboto", sans-serif;
@@ -39,6 +41,7 @@ aside {
     font-style: italic;
     font-weight: inherit;
     margin: 0;
+    padding-bottom: 20px;
   }
   h4 {
     font-size: 18px;
@@ -46,28 +49,35 @@ aside {
     font-weight: inherit;
     line-height: 2em;
     margin: 0;
+    padding-top: 20px;
   }
 }
 
 /* Left sidebar - navigation menu */
 
 .left-sidebar-nav {
-  @include flexy($dir: column);
-  padding: 20px 0 20px 0;
+  @include flexy($dir: column, $aligni: center);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.50);
   a {
     @include flexy($aligni: center, $just: center);
     height: 51px;
     width: 200px;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
     &:hover {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       background-color: #ffffff;
       color: #262e31;
+      border-top: 1px solid #262e31;
     }
   }
-  &-sub {
-    @include flexy($dir: column);
+  &-sub-visible {
+    animation: menuin .6s linear;
+    @include flexy();
+    border: none;
+    visibility: visible;
     a {
       @include flexy($just: flex-start);
+      border-top: 1px solid transparent;
       font-size: 18px;
       height: 30px;
       width: 190px;
@@ -79,10 +89,16 @@ aside {
       }
     }
   }
+
+  &-sub-invisible {
+    animation: menuout .6s linear;
+    border: none;
+    max-height: 0;
+    visibility:hidden;
+  }
   .selected {
     background-color: #ffffff;
     color: #262e31;
-    border-bottom: 1px solid #262e31;
     border-top: 1px solid #262e31;
   }
 }

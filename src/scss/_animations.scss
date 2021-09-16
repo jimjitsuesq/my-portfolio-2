@@ -23,3 +23,28 @@
 .slide-exit-active {
   transform: translateY(-100%);
 }
+
+@keyframes menuin {
+  0% {
+    visibility: hidden;
+    height: 0px;
+  }
+  50% {
+    max-height: 150px;
+    visibility: hidden;
+  }
+  99% {
+    max-height: 300px;
+    visibility: hidden;
+  }
+}
+
+@keyframes menuout {
+  0% {
+    visibility: hidden;
+    max-height: 300px;
+  }
+  50% {
+    max-height: 150px;
+  }
+}

@@ -7,29 +7,42 @@ import headShot from "../a3.JPG";
 const LeftSidebar = () => {
   const [show, setShow] = useState(false);
   let location = useLocation();
-  const handleNavClickProjects = () => {
-    if (show) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-  };
-  const handleNavClickFromProjects = () => {
-    setShow(true);
-  };
-  const checkPage = useCallback(() => {
+  let subMenu = document.getElementById('subMenu');
+
+  const showMenu = useCallback(() => {
+    subMenu.className = "left-sidebar-nav-sub-visible";
+  }, [subMenu]);
+
+  function scrollPageTop () {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
+  }
+
+  const handleNavClickProjects = () => {
+    if (show) {
+      setShow(false);
+      subMenu.className = "left-sidebar-nav-sub-invisible";
+    } else {
+      setShow(true);
+      showMenu();
+    }
+  };
+
+  const checkPage = useCallback(() => {
     if (location.pathname.includes("projects/")) {
       setShow(true);
+      showMenu();
     }
-  }, [location]);
+  }, [location, showMenu]);
+
   useLayoutEffect(() => {
+    subMenu = document.getElementById('subMenu')
+    scrollPageTop()
     checkPage();
-  }, [checkPage]);
+  }, [checkPage, subMenu]);
 
   return (
     <aside>
@@ -63,7 +76,8 @@ const LeftSidebar = () => {
             My Projects
           </NavLink>
         </li>
-        {show ? <ProjectMenu onClick={handleNavClickFromProjects} /> : ""}
+        {/* {show ? <ProjectMenu onClick={handleNavClickFromProjects} /> : ""} */}
+        <ProjectMenu />
         <li>
           <NavLink exact to="/skills" activeClassName="selected">
             My Skills

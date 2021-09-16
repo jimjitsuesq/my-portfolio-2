@@ -11,7 +11,7 @@ function ProjectMenu(props) {
   }
   generateProjectArray();
   return (
-    <ul className="left-sidebar-nav-sub">
+    <ul id="subMenu" className="left-sidebar-nav-sub-invisible">
       {projectArray.map((project, i) => {
         return (
           <li key={i}>
