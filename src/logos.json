@@ -130,5 +130,15 @@
     "logo_padding_right": "0px",
     "logo_padding_bottom": "20px",
     "logo_padding_left": "0px"
+  },
+  {
+    "id": 14,
+    "logo_name": "sass",
+    "logo_alt": "sass logo",
+    "logo_height": "50px",
+    "logo_padding_top": "20px",
+    "logo_padding_right": "0px",
+    "logo_padding_bottom": "25px",
+    "logo_padding_left": "10px"
   }
 ]}
