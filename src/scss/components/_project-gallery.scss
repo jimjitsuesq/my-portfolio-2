@@ -13,8 +13,8 @@
   @include flexy($just: center, $aligni: baseline);
   background: $element-background;
   height: fit-content;
-  gap: 20px;
-  padding: 20px;
+  gap: 25px;
+  padding: 25px;
   &-project-container {
     @include flexy($dir: column, $aligni: center);
     width: 300px;
