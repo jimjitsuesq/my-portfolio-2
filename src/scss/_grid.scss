@@ -5,9 +5,8 @@
 .container {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 200px minmax(340px, 1080px);
-  row-gap: 20px;
-  column-gap: 20px;
+  grid-template-columns: 200px minmax(340px, 1280px);
+  gap: 20px;
   grid-template-areas: "aside main";
 }
 
@@ -15,7 +14,7 @@
   display: grid;
   grid-template-columns: minmax(514px, 1280px);
   grid-template-rows: 80px;
-  row-gap: 20px;
+  gap: 20px;
   grid-template-areas:
     "main-header"
     "home-text";
@@ -25,7 +24,7 @@
   display: grid;
   grid-template-columns: minmax(550px, 1280px);
   grid-template-rows: minmax(80px, 95px);
-  row-gap: 20px;
+  gap: 20px;
   grid-template-areas:
     "project-header"
     "project-wrapper";
