@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => (
   <main>
     <div className="home-grid">
-      <div className="home-header">
+      <div className="main-header">
         <h1>Hello!</h1>
       </div>
       <div className="home-text-container">
@@ -14,7 +14,7 @@ const Home = () => (
           Problem-solving, puzzles, and figuring out how things work are some of my favorite things. Brazilian Jiu Jitsu Brown Belt and instructor.
         </p>
         <p>
-          Thanks for visiting.  Find out more about me <a href={'./about'}>here</a> or have a look at some of my projects <a href={'./Projects/ProjectGallery.js'}>here</a>.
+          Thanks for visiting.  Find out more about me <a href={'./about'}>here</a> or have a look at some of my projects <a href={'/projects'}>here</a>.
         </p>
       </div>
     </div>

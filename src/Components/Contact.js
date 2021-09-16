@@ -32,10 +32,10 @@ function Contact() {
   return (
     <main>
       <div className="home-grid">
-        <div className="home-header">
+        <div className="main-header">
           <h1>Contact Me</h1>
         </div>
-        <div className="home-text-container">
+        <div className="contact-container">
           <div className="contact-text-container">
             <h3>Email</h3>
             <p>

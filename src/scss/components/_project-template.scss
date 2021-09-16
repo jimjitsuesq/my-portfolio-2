@@ -1,0 +1,71 @@
+.project-header {
+  grid-area: project-header;
+  @include flexy($just: center, $aligni: center);
+  background: $element-background;
+  max-width: 1280px;
+  min-width: 575px;
+  text-align: center;
+}
+
+.main-project {
+  grid-area: project-wrapper;
+  @include flexy();
+  min-width: 575px;
+  max-width: 1300px;
+  row-gap: 20px;
+  &-text-box {
+    background: $element-background;
+    padding: 20px 20px 0 20px;
+    min-width: 400px;
+    max-width: 880px;
+    margin: 0;
+    a {
+      text-decoration: underline;
+    }
+    h3 {
+      text-decoration: underline;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+}
+
+.main-project-technology {
+  @include flexy();
+  grid-area: tech;
+  width: 100%;
+  gap: 20px;
+  &-container {
+    @include flexy($dir: column);
+    background: $element-background;
+    min-width: 514px;
+    height: 150px;
+    padding: 20px;
+    flex: 1;
+    &-box {
+      @include flexy(
+        $dir: column,
+        $wrap: nowrap,
+        $just: center,
+        $aligni: center
+      );
+      margin: 0;
+      height: 140px;
+      max-width: 1280px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid #ffffff;
+      padding-top: 10px;
+      h3 {
+        font-size: 24px;
+        text-decoration: underline;
+        text-shadow: $text-shadow;
+        font-weight: normal;
+        padding-bottom: 10px;
+        margin: 0;
+      }
+      &-logo-container {
+        @include flexy($aligni: center);
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/* Page transition animation */
+
+.slide-enter-active,
+.slide-exit-active {
+  transition: transform 2000ms ease;
+}
+
+.slide-enter {
+  transform: translateY(100%)
+}
+
+.slide-enter.slide-enter-active {
+  transform: translateY(0%);
+}
+
+.slide-exit {
+  position: absolute;
+  top: 0;
+  left: 200;
+  width: 1080px;
+  transform: translateY(0%);
+}
+
+.slide-exit-active {
+  transform: translateY(-100%);
+}

@@ -1,0 +1,88 @@
+aside {
+  @include flexy($dir: column, $aligni: center, $alignc: center);
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  width: 200px;
+  height: 100%;
+  font-weight: normal;
+  text-shadow: $text-shadow;
+  background: $element-background;
+  padding-bottom: 20px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+/* Left sidebar - text */
+
+.left-sidebar-headshot {
+  margin: 20px 20px 10px 20px;
+}
+
+.left-sidebar-text-container {
+  text-align: center;
+  margin: 0;
+  p,
+  a {
+    font-size: 18px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: inherit;
+    margin: 0;
+  }
+  h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: inherit;
+    margin: 0;
+  }
+  h4 {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: inherit;
+    line-height: 2em;
+    margin: 0;
+  }
+}
+
+/* Left sidebar - navigation menu */
+
+.left-sidebar-nav {
+  @include flexy($dir: column);
+  padding: 20px 0 20px 0;
+  a {
+    @include flexy($aligni: center, $just: center);
+    height: 51px;
+    width: 200px;
+    &:hover {
+      transition: all 0.2s ease;
+      background-color: #ffffff;
+      color: #262e31;
+    }
+  }
+  &-sub {
+    @include flexy($dir: column);
+    a {
+      @include flexy($just: flex-start);
+      font-size: 18px;
+      height: 30px;
+      width: 190px;
+      padding-left: 10px;
+      &:before {
+        content: "\003E";
+        display: inline;
+        padding-right: 5px;
+      }
+    }
+  }
+  .selected {
+    background-color: #ffffff;
+    color: #262e31;
+    border-bottom: 1px solid #262e31;
+    border-top: 1px solid #262e31;
+  }
+}

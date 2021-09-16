@@ -1,0 +1,34 @@
+.project-gallery-header {
+  grid-area: project-gallery-header;
+  @include flexy($alignc: center, $just: center);
+  background: $element-background;
+  max-width: 100%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-gallery {
+  grid-area: project-gallery;
+  @include flexy($just: center, $aligni: baseline);
+  background: $element-background;
+  height: fit-content;
+  gap: 20px;
+  padding: 20px;
+  &-project-container {
+    @include flexy($dir: column, $aligni: center);
+    width: 300px;
+    h2 {
+      font-size: inherit;
+      font-weight: normal;
+      line-height: 1em;
+      margin-top: 0;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    img {
+      width: 300px;
+      padding-bottom: 5px;
+    }
+  }
+}

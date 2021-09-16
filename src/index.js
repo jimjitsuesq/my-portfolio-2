@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import "semantic-ui-css/semantic.min.css";
-import "./index.css";
-import "./grid.css";
+import "semantic-ui-css/components/form.min.css";
+import "semantic-ui-css/components/input.min.css";
+import "semantic-ui-css/components/icon.min.css";
+import "./scss/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

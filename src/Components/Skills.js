@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => (
   <main>
     <div className="home-grid">
-      <div className="home-header">
+      <div className="main-header">
         <h1>My Skills</h1>
       </div>
       <div className="skills-text-container">
@@ -14,6 +14,7 @@ const Skills = () => (
           <li>Pug</li>
           <li>HTML</li>
           <li>CSS</li>
+          <li>Sass</li>
           <li>Markdown</li>
         </ul>
         <h3>Backend Languages and Tools</h3>
@@ -38,6 +39,7 @@ const Skills = () => (
           <li>Figma</li>
           <li>Postman</li>
           <li>Typora</li>
+          <li>MindManager</li>
         </ul>
       </div>
     </div>

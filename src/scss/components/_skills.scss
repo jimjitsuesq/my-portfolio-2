@@ -1,0 +1,19 @@
+.skills-text-container {
+  @include flexy($dir: column, $just: space-evenly, $aligni: baseline);
+  min-width: 400px;
+  max-width: 875px;
+  height: fit-content;
+  background: $element-background;
+  padding: 20px 20px 50px 25px;
+  flex: 1;
+  h3 {
+    font-size: inherit;
+    font-weight: normal;
+    text-decoration: underline;
+    line-height: 1em;
+    margin-bottom: 5px;
+  }
+  ul {
+    margin: 0;
+  }
+}

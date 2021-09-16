@@ -11,9 +11,12 @@ function TechnologyBox(props) {
   }
   generateLogoArray();
   return (
-    <div className="main-project-technology-box" id={`${props.title}`}>
+    <div
+      className="main-project-technology-container-box"
+      id={`${props.title}`}
+    >
       <h3>{props.title}</h3>
-      <div className="main-project-technology-box-logo-container">
+      <div className="main-project-technology-container-box-logo-container">
         {logoArray.map((logo, i) => {
           return (
             <img

@@ -18,6 +18,11 @@ const LeftSidebar = () => {
     setShow(true);
   };
   const checkPage = useCallback(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
     if (location.pathname.includes("projects/")) {
       setShow(true);
     }
@@ -55,13 +60,13 @@ const LeftSidebar = () => {
             activeClassName="selected"
             onClick={handleNavClickProjects}
           >
-            Projects
+            My Projects
           </NavLink>
         </li>
         {show ? <ProjectMenu onClick={handleNavClickFromProjects} /> : ""}
         <li>
           <NavLink exact to="/skills" activeClassName="selected">
-            Skills
+            My Skills
           </NavLink>
         </li>
         <li>

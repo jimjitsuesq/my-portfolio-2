@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+
+body {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  margin: 20px;
+  background-image: url("../background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100% 70%;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+}
+
+p {
+  margin: 0 0 1em 0;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1 {
+  text-shadow: $text-shadow;
+  font-family: Arima Madurai;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0;
+}

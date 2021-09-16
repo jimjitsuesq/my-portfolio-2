@@ -1,0 +1,27 @@
+.right-sidebar {
+  width: 340px;
+  &-links-container {
+    @include flexy($just: space-around);
+    width: 340px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    a {
+      @include flexy($just: center, $aligni: center);
+      font-size: 18px;
+      background: $element-background;
+      border: 1px solid #ffffff;
+      border-radius: 15px;
+      box-shadow: $text-shadow;
+      padding: 2px 0 2px 0;
+      width: 140px;
+      height: 33px;
+    }
+  }
+  &-screenshots-container {
+    @include flexy($just: center, $aligni: center);
+    background: $element-background;
+    padding: 20px 0 20px 0;
+    gap: 20px;
+    flex: 1;
+  }
+}

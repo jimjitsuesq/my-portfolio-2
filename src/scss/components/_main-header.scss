@@ -1,0 +1,7 @@
+.main-header {
+  grid-area: main-header;
+  @include flexy($alignc: center, $just: center);
+  background: $element-background;
+  min-width: 400px;
+  max-width: 920px;
+}
