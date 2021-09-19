@@ -8,13 +8,13 @@ const Home = () => (
       </div>
       <div className="home-text-container">
         <p>
-          Recovering-attorney-turned-software-developer who took advantage of Covid-19 to make a long-overdue career change into coding and software development. 
+          Recovering-attorney-turned-software-developer who took advantage of Covid-19 to make a long-overdue career change into tech. 
         </p>
         <p>
-          Problem-solving, puzzles, and figuring out how things work are some of my favorite things. Brazilian Jiu Jitsu Brown Belt and instructor.
+          Problem-solving, puzzles, and figuring out how things work are some of my favorite things. I am also a Brazilian Jiu Jitsu instructor.
         </p>
         <p>
-          Thanks for visiting.  Find out more about me <a href={'./about'}>here</a> or have a look at some of my projects <a href={'/projects'}>here</a>.
+          Thanks for visiting.  You can find out more <a href={'./about'}>about me</a> or have a look at some of my <a href={'/projects'}>projects</a>.
         </p>
       </div>
     </div>

@@ -65,9 +65,9 @@ aside {
     border-top: 1px solid rgba(255, 255, 255, 0.50);
     &:hover {
       transition: all 0.4s ease;
-      background-color: #ffffff;
-      color: #262e31;
-      border-top: 1px solid #262e31;
+      background-color: $white;
+      color: $black;
+      border-top: 1px solid $black;
     }
   }
   &-sub-visible {
@@ -97,8 +97,8 @@ aside {
     visibility:hidden;
   }
   .selected {
-    background-color: #ffffff;
-    color: #262e31;
-    border-top: 1px solid #262e31;
+    background-color: $white;
+    color: $black;
+    border-top: 1px solid $black;
   }
 }

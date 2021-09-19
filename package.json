@@ -1,5 +1,5 @@
 {
-  "name": "my-portfolio-2",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start -host 192.168.50.176",
+    "start": "PORT=8050 react-scripts start -host 192.168.50.176",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,17 +1,16 @@
 .resume-header {
   @include flexy($alignc: center, $just: center);
   background: $element-background;
-  min-width: 650px;
-  max-width: 920px;
+  // min-width: 840px;
+  width: 1280px;
 }
 
 .resume-text-container {
   @include flexy($dir: column, $aligni: center);
-  min-width: 610px;
-  max-width: 880px;
+  // min-width: min-content;
+  width: 1240px;
   background: $element-background;
   padding: 25px 20px 50px 20px;
-  flex: 1;
   a {
     padding-bottom: 20px;
   }

@@ -35,7 +35,7 @@
     width: auto;
 
     label {
-      color: #ffffff;
+      color: $white;
       font-weight: 500;
     }
   }
@@ -51,11 +51,11 @@
 
 .ui.green.button {
   background-color: #198f35;
-  color:#ffffff;
+  color:$white;
   box-sizing: content-box;
   padding: 11px 21px 11px 21px;
   border-radius: 4px;
-  border-color: #ffffff;
+  border-color: $white;
   border-width: 0;
 
   &:hover {

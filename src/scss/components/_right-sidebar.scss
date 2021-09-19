@@ -9,7 +9,7 @@
       @include flexy($just: center, $aligni: center);
       font-size: 18px;
       background: $element-background;
-      border: 1px solid #ffffff;
+      border: 1px solid $white;
       border-radius: 15px;
       box-shadow: $text-shadow;
       padding: 2px 0 2px 0;

@@ -14,10 +14,19 @@ function Resume() {
           <a href="../JimPeters.pdf" download>
             Click to Download
           </a>
-          <a href="../JimPeters.pdf" download>
+          <a className="resume" href="../JimPeters.pdf" download>
+            <div className="resume">
             <Document file={resume} options={{ workerSrc: "/pdf.worker.js" }}>
-              <Page pageNumber={1} />
+              <Page 
+                pageNumber={1} 
+                scale={3}
+                width={400} />
+              <Page 
+                pageNumber={2} 
+                scale={3}
+                width={400} />
             </Document>
+            </div>
           </a>
         </div>
       </div>
