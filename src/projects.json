@@ -40,9 +40,9 @@
   },
   {
       "id": 3,
-      "project_name": "Book Collection",
-      "project_name_short": "Book Collection",
-      "project_name_path": "book-collection",
+      "project_name": "Book Collector",
+      "project_name_short": "Book Collector",
+      "project_name_path": "book-collector",
       "built_technologies": [["nodejs", 8], ["expressjs", 2], ["pugjs", 10], ["sqlite", 12]],
       "deployed_technologies": [["google_cloud", 4]],
       "live_demo": "https://portfolio-sql-library-manager.wn.r.appspot.com/books",

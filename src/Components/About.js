@@ -8,7 +8,7 @@ const About = () => (
       </div>
       <div className="home-text-container">
         
-        <p>I have been in love with computers and technology in general since even before my parents bought me a TRS-80 in the mid 1980's. Unfortunately, I never thought of it as a career option until after I was already committed to a career in law.</p>
+        <p>I have been drawn to computers and technology in general since even before my parents bought me a TRS-80 in the mid 1980's. Unfortunately, I never thought of it as a career option until after I was already committed to a career in law.</p>
         <p>Even while working in the legal field I was always staying up to date on any technology that could be leveraged to make our jobs easier. Wherever I worked, I quickly became the go-to "tech" person, serving on technology committees and working closely with the IT personnel.</p>
         <p>I would also become the de-facto webmaster, teaching myself HTML, CSS and other languages in my spare time. I would write scripts and my own programs to make the clunky case management software used at a firm do what I thought it already should have done, which was often more exciting and rewarding than the actual legal work.</p> 
         <p>A career spent fighting for a living takes its toll on a person and like so many others before me, the practice of law quickly lost its luster and eventually burned me out. </p>
