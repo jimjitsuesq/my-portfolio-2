@@ -11,9 +11,22 @@
     "github_client_link": "https://github.com/jimjitsuesq/portfolio-my-portfolio",
     "github_server_link": 0,
     "screenshots": 1
-  },  
+  },
   {
     "id": 1,
+    "project_name": "Ventura Wrestling Website",
+    "project_name_short": "Ventura Wrestling",
+    "project_name_path": "vdub",
+    "description": "<p>I developed this site for the CIF Champion Ventura Wrestling Team. \r\n        <ul>\r\n          <li>Written in ReactJS and deployed on Netlify<\/li>\r\n",
+    "built_technologies": [["reactjs", 11], ["figma", 3], ["sass", 14]],
+    "deployed_technologies": [["netlify", 7]],
+    "live_demo": "https://www.venturawrestling.com",
+    "github_client_link": "https://github.com/jimjitsuesq/portfolio-my-portfolio",
+    "github_server_link": 0,
+    "screenshots": 1
+  },  
+  {
+    "id": 2,
     "project_name": "Full-Stack Academic Curriculum Manager",
     "project_name_short": "Full-Stack ACM",
     "project_name_path": "acm",
@@ -26,7 +39,7 @@
     "screenshots": 4
   },  
   {
-      "id": 2,
+      "id": 3,
       "project_name": "Flickr Search",
       "project_name_short": "Flickr Search",
       "project_name_path": "flickr-search",
@@ -39,7 +52,7 @@
       "description": "<p>An app written in ReactJS that searches Flickr for photos using their API then displays them in a gallery.\n        <ul>\n          <li>This was the seventh project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp program.</li>\n          <li>I received the highest grade available (\"Exceeds Expectations\").</li>\n          <li>Uses Axios to make asynchronous requests from Flickr.</li>\n          <li>Uses React Router to track, manipulate and harness the browser history to allow users to browse back and forth through their searches.</li>\n        </ul>\n        <p>The app was originally written in React's older \"class\" syntax, but after finishing the Treehouse bootcamp I completely rewrote it using more modern React Hooks. \n        <p>This challenge was a way to get more practice using these newer functions, to better understand \"state\" and to streamline the app for deployment."
   },
   {
-      "id": 3,
+      "id": 4,
       "project_name": "Book Collector",
       "project_name_short": "Book Collector",
       "project_name_path": "book-collector",
@@ -52,7 +65,7 @@
       "description": "<p>An application written using NodeJS and the ExpressJS framework to track a collection of books stored in a SQLite database. Queries are handled using the Sequelize ORM and views are rendered using the Pug template engine.\r\n        <p>Users are able to:\r\n        <ul>\r\n          <li>Search the database for books.</li>\r\n          <li>View details for each book.</li>\r\n          <li>Add a book to the collection.</li>\r\n          <li>Edit or delete each book's record.</li>\r\n        </ul>\r\n        <p>The main focus in this project was on expanding knowledge of using an API to work with SQL queries. There was also emphasis on validating, interacting with and displaying the data stored within the database.\r\n        <p>This was the eighth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp and is deployed on Google Cloud using the App Engine. I received the highest grade available (&quot;Exceeds Expectations&quot;)."
   },
   {
-    "id": 4,
+    "id": 5,
     "project_name": "Phrase Hunter",
     "project_name_short": "Phrase Hunter",
     "project_name_path": "phrase-hunter",
@@ -65,7 +78,7 @@
     "description": "<p>A browser-based JavaScript phrase-guessing game similar to hangman or Wheel of Fortune.\n        <ul>\n          <li>This was the fourth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received the highest grade available (&quot;Exceeds Expectations&quot;).</li>\n          <li>The main focuses of this project included learning more complicated JavaScript functions, advanced object-oriented programming and using JavaScript class syntax.</li>\n        </ul>"
   },
   {
-    "id": 5,
+    "id": 6,
     "project_name": "Interactive Form",
     "project_name_short": "Interactive Form",
     "project_name_path": "interactive-form",
@@ -78,7 +91,7 @@
     "description": "        <p>An HTML/JavaScript site containing a sign-up form for a developer conference.\n        <ul>\n          <li>This was the third project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received the highest grade available (&quot;Exceeds Expectations&quot;).</li>\n          <li>The main focuses of this project included building form elements, data validation and practicing regular expressions.</li>\n        </ul>"
   },
   {
-    "id": 6,
+    "id": 7,
     "project_name": "Employee Directory",
     "project_name_short": "Employee Directory",
     "project_name_path": "employee-directory",
@@ -91,7 +104,7 @@
     "description": "<p>A JavaScript site that asynchronously fetches fictitious user data from <a href=\"http://randomuser.me\">randomuser.me</a>, a public API, and displays it.</p>\n        <ul>\n          <li>This was the fifth project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received the highest grade available (&quot;Exceeds Expectations&quot;).</li>\n          <li>The main focuses of this project including fetching data from an API and writing asynchronous functions using async/await.</li>\n          <li>Other emphases of this project were on creating modals and implementing real-time search functionality.</li>\n      </ul>"
   },
   {
-    "id": 7,
+    "id": 8,
     "project_name": "Random Quote Generator",
     "project_name_short": "Quote Generator",
     "project_name_path": "random-quote-generator",
@@ -104,7 +117,7 @@
     "description": "        <p>A random quote generator.</p>\n        <ul>\n          <li>This was the first project in my Team Treehouse Full-Stack JavaScript Tech Degree bootcamp.</li>\n          <li>I received the highest grade available (&quot;Exceeds Expectations&quot;).</li>\n        </ul>"
   },
   {
-    "id": 8,
+    "id": 9,
     "project_name": "Student Directory",
     "project_name_short": "Student Directory",
     "project_name_path": "student-directory",
